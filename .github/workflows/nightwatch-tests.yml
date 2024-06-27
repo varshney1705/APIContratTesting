@@ -29,4 +29,4 @@ jobs:
         run: npm install 
  
       - name: Run Nightwatch tests 
-        run: npm test 
+        run: npx nightwatch
