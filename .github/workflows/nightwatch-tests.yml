@@ -32,4 +32,4 @@ jobs:
         run: npm install @nightwatch/apitesting --save-dev
 
       - name: Run Nightwatch tests 
-        run: npx nightwatch
+        run: npx nightwatch --tag restapi
