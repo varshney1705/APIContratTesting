@@ -5,9 +5,9 @@
 
   <testsuite name="restapiTest"
     errors="0" failures="0" hostname="" id="" package="restapiTest" skipped="0"
-    tests="1" time="2.558" timestamp="">
+    tests="1" time="14.76" timestamp="">
   
-    <testcase name="Verify rest api response" classname="restapiTest" time="1.278" assertions="1">
+    <testcase name="Verify rest api response" classname="restapiTest" time="7.560" assertions="1">
 
     
     </testcase>
