@@ -31,7 +31,9 @@ module.exports = {
   // See https://nightwatchjs.org/guide/concepts/test-globals.html
   globals_path: 'global.js',
   
-  webdriver: {},
+  webdriver: {
+
+  },
 
   test_workers: {
     enabled: true
@@ -49,7 +51,10 @@ module.exports = {
       },
 
       desiredCapabilities: {
-        browserName: 'chrome'
+        browserName: 'chrome',
+        chromeOptions: {
+          args: ['--headless', '--no-sandbox', '--disable-dev-shm-usage']
+        }
       },
       
       webdriver: {
@@ -62,29 +67,6 @@ module.exports = {
       start_session:false,
       webdriver:{
         start_process:false,
-      },
-    },
-      
-    chrome: {
-      desiredCapabilities: {
-        browserName: 'chrome',
-        'goog:chromeOptions': {
-          // More info on Chromedriver: https://sites.google.com/a/chromium.org/chromedriver/
-          args: [
-            //'--no-sandbox',
-            //'--ignore-certificate-errors',
-            //'--allow-insecure-localhost',
-            //'--headless=new'
-          ]
-        }
-      },
-
-      webdriver: {
-        start_process: true,
-        server_path: '',
-        cli_args: [
-          // --verbose
-        ]
       },
     },
     

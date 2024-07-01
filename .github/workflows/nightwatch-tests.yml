@@ -31,5 +31,21 @@ jobs:
       - name: Install Nightwatch API testing plugin
         run: npm install @nightwatch/apitesting --save-dev
 
+      - name: Install Chrome
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wget unzip
+          wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+          sudo dpkg -i google-chrome-stable_current_amd64.deb
+          sudo apt-get install -f
+
+      - name: Install ChromeDriver
+        run: |
+          wget -N https://chromedriver.storage.googleapis.com/2.41/chromedriver_linux64.zip
+          unzip chromedriver_linux64.zip
+          sudo mv chromedriver /usr/local/bin/
+          sudo chown root:root /usr/local/bin/chromedriver
+          sudo chmod +x /usr/local/bin/chromedriver  
+
       - name: Run Nightwatch tests 
-        run: npx nightwatch --tag restapi
+        run: npx nightwatch --tag restapi --env chrome
