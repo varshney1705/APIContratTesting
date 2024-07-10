@@ -5,9 +5,9 @@
 
   <testsuite name="restapiContractTest"
     errors="0" failures="0" hostname="" id="" package="restapiContractTest" skipped="0"
-    tests="1" time="2.337" timestamp="">
+    tests="1" time="1.853" timestamp="">
   
-    <testcase name="Verify REST API contract" classname="restapiContractTest" time="1.167" assertions="4">
+    <testcase name="Verify REST API contract" classname="restapiContractTest" time="0.9250" assertions="4">
 
     
 

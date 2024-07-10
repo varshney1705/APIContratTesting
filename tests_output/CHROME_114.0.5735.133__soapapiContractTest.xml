@@ -5,9 +5,9 @@
 
   <testsuite name="soapapiContractTest"
     errors="0" failures="0" hostname="" id="" package="soapapiContractTest" skipped="0"
-    tests="1" time="15.04" timestamp="">
+    tests="1" time="2.336" timestamp="">
   
-    <testcase name="Convert Number to Words" classname="soapapiContractTest" time="7.652" assertions="2">
+    <testcase name="Convert Number to Words" classname="soapapiContractTest" time="1.166" assertions="2">
 
     
 

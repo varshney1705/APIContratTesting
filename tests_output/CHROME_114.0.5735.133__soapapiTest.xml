@@ -5,9 +5,13 @@
 
   <testsuite name="soapapiTest"
     errors="0" failures="0" hostname="" id="" package="soapapiTest" skipped="0"
-    tests="1" time="5.846" timestamp="">
+    tests="1" time="2.299" timestamp="">
   
-    <testcase name="Convert Number to Words" classname="soapapiTest" time="2.908" assertions="0">
+    <testcase name="Convert Number to Words" classname="soapapiTest" time="1.147" assertions="2">
+
+    
+
+    
     </testcase>
   
 
