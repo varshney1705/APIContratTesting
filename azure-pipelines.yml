@@ -17,6 +17,8 @@ steps:
 
 - script: |
     npm install
-    npx nightwatch
   displayName: 'npm install and build'
 
+- script: |
+    npx nightwatch
+  displayName: 'ran nighwatch test'
