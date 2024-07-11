@@ -9,7 +9,7 @@ variables:
   nodeVersion: '20.9.0'
 
 steps:
-- task: UseNode@2
+- task: NodeTool@0
   inputs:
     versionSpec: $(nodeVersion)
   displayName: 'Install Node.js'
